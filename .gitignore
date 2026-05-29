@@ -1,0 +1,7 @@
+figures/
+results/
+*.png
+*.mat
+*.csv
+*.rar
+*.md
