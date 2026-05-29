@@ -1,5 +1,11 @@
 clear; clc; close all;
 
+% 添加项目目录到 MATLAB 路径
+root_dir = fileparts(fileparts(mfilename('fullpath')));
+addpath(root_dir);
+addpath(fullfile(root_dir, 'lib'));
+addpath(fullfile(root_dir, 'adaptive'));
+
 %% 1. 配置与信号生成
 cfg = sonar_config();
 

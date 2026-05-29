@@ -1,3 +1,9 @@
+% 添加项目目录到 MATLAB 路径
+root_dir = fileparts(fileparts(mfilename('fullpath')));
+addpath(root_dir);
+addpath(fullfile(root_dir, 'lib'));
+addpath(fullfile(root_dir, 'adaptive'));
+
 cfg = sonar_config();
 
 overrides = struct();

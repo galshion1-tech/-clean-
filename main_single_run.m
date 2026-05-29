@@ -7,6 +7,11 @@ function result = main_single_run(cfg, mc_index, overrides, opts)
 %   result = main_single_run(cfg, mc_index);
 %   result = main_single_run(cfg, mc_index, overrides);
 %   result = main_single_run(cfg, mc_index, overrides, opts);
+
+%% 0. 添加项目子目录到 MATLAB 路径
+root_dir = fileparts(mfilename('fullpath'));
+addpath(fullfile(root_dir, 'lib'));
+addpath(fullfile(root_dir, 'adaptive'));
 %
 % 输入:
 %   cfg        sonar_config() 输出配置。若为空，则自动调用 sonar_config()。
