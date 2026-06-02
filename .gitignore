@@ -4,4 +4,4 @@ results/
 *.mat
 *.csv
 *.rar
-*.md
+PIPELINE.md
